@@ -1,0 +1,51 @@
+<!--
+https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API
+https://leafletjs.com/examples/quick-start/
+
+-->
+
+<!DOCTYPE html>
+<html>
+     <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Search for food deals!">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+            crossorigin=""/>
+        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+            crossorigin=""></script>
+        <title>FoodSearch</title>
+        <script src="index.js"></script>
+        <style>
+            #foodMap{
+                height: 180px;
+            }
+        </style>
+     </head>
+
+     <body>
+          <h1>Food Map</h1>
+          
+          <p>
+              Welcome!
+         </p>
+
+         <div id="foodMap"></div>
+         <script>
+            const myMap = L.map('foodMap').setView([51.505, -0.09], 13);
+            const attribution = '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+
+             if('geolocation' in navigator) {
+                console.log('geolocation is available');
+                navigator.geolocation.getCurrentPosition(position => {
+                    console.log(position.coords);
+                });
+            } else {
+                console.log('geolocation is unavailable');
+            }
+         </script>
+
+     </body>
+</html>

@@ -1,0 +1,27 @@
+{
+  "name": "hackathonproject",
+  "version": "1.0.0",
+  "description": "Hackathon Project for Nwhacks2021",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Umiclon/HackathonProject.git"
+  },
+  "keywords": [
+    "example",
+    "data",
+    "map"
+  ],
+  "author": "Roger Huang",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Umiclon/HackathonProject/issues"
+  },
+  "homepage": "https://github.com/Umiclon/HackathonProject#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
