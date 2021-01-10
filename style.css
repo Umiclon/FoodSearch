@@ -1,0 +1,89 @@
+/* HTML and CSS were partially based on https://www.youtube.com/watch?v=2r91B6ZwN_E&ab_channel=GTCoding */
+/* Video provided base knowledge on how to convert our design to an actual website */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+  /* Navigation */
+
+  .nav-container {
+    height: 98px;
+    background: #131212;
+  }
+
+  .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+  }
+
+  nav ul {
+      display: flex;
+
+  }
+
+  nav .logo {
+    font-family: "Righteous";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgb(235, 229, 229);
+  }
+
+  .nav-items li {
+      list-style: none;
+      margin-right: 75px;
+      color: rgb(240, 232, 232);
+
+      font-family: "Roboto";
+      font-size: 30px;
+  }
+
+  #last {
+      margin-right: 0;
+  }
+
+   /* Body */
+
+  body {
+      background-image: url("images/Map.svg");
+      /* Image credit: https://snazzymaps.com/style/11667/test */
+      background-position: right;
+      background-size: contain;
+  }
+
+  .header-container {
+      background-size: contain;
+      height: calc(100vh - 72px);
+      align-items: center;
+  }
+
+  .body-img {
+      text-align: center;
+  }
+
+  #body-img1 {
+    padding-top: 175px;
+  }
+
+  .body-content {
+      text-align: center;
+      color: rgb(26, 25, 25);
+      font-family: "Roboto", "sans-serif";
+      padding-top: 61px;
+      background-repeat: no-repeat;
+  }
+
+  #body-img2 {
+      padding-top: 61px;
+  }

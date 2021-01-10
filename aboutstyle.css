@@ -1,0 +1,104 @@
+/* HTML and CSS were partially based on https://www.youtube.com/watch?v=2r91B6ZwN_E&ab_channel=GTCoding */
+/* Video provided base knowledge on how to convert our design to an actual website */
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+  /* Navigation */
+
+  .nav-container {
+    height: 98px;
+    background: #131212;
+  }
+
+  .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+  }
+
+  nav ul {
+      display: flex;
+
+  }
+
+  nav .logo {
+    font-family: "Righteous";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: rgb(235, 229, 229);
+  }
+
+  .nav-items li {
+      list-style: none;
+      margin-right: 75px;
+      color: rgb(240, 232, 232);
+
+      font-family: "Roboto";
+      font-size: 30px;
+  }
+
+  #last {
+      margin-right: 0;
+  }
+
+   /* Body */
+
+  body {
+      background-image: url("images/about.svg");
+      /* Image credit: https://www.facebook.com/lyricsbyapogany/ */
+      background-position: right;
+      background-size: contain;
+  }
+
+  .header-container {
+      background-size: contain;
+      height: calc(100vh - 72px);
+      align-items: center;
+      font-size: 30px;
+      color: rgb(20, 20, 20);
+  }
+
+  .header-contain h1 {
+      padding-top: 100px;
+      font-style: "Roboto";
+  }
+
+  .body-items {
+    padding-top: 450px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+}
+
+.body-items ul {
+    display: inline-flex;
+
+}
+
+  .body-items li {
+    list-style: none;
+    margin-right: 25px;
+    
+}
+   .last {
+    margin-right: 0;
+}
+
+#first {
+    padding-top: 55px;
+}
+
+ 
