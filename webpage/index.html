@@ -1,38 +1,82 @@
-<!--
+<!-- 
+HTML and CSS were partially based on https://www.youtube.com/watch?v=2r91B6ZwN_E&ab_channel=GTCoding
+Video provided base knowledge on how to convert our design to an actual website 
+
 https://developer.mozilla.org/en-US/docs/Web/API/Geolocation_API/Using_the_Geolocation_API
 https://leafletjs.com/examples/quick-start/
-
 -->
 
+
 <!DOCTYPE html>
-<html>
-     <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Search for food deals!">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
-            integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
-            crossorigin=""/>
-        <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-            integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-            crossorigin=""></script>
-        <title>FoodSearch</title>
-        <script src="index.js"></script>
-        <style>
-            #foodMap{
-                height: 180px;
-            }
-        </style>
-     </head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page</title>
 
-     <body>
-          <h1>Food Map</h1>
-          
-          <p>
-              Welcome!
-         </p>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
+        integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
+        crossorigin=""/>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+        crossorigin=""></script>
 
-         <div id="foodMap"></div>
+    <style>
+        #foodMap{
+            height: 360px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav-container">
+        <div class="wrapper"> 
+            <nav>
+                <div class="logo"> 
+                    <b> FoodSearch </b>
+                </div>
+
+                <ul class="nav-items">
+                    <li>
+                        <a href="index.html" style=color:white> Home </a>  
+                    </li>
+                    <li>
+                        <a href="about.html" style=color:white>  About </a>  
+                    </li>
+                    <li>
+                        <a href="deals.html" id="last" style=color:white> Find Deals </a>  
+                    </li>
+                
+                </ul>
+
+
+            </nav>
+
+        </div>
+    </div>
+
+    <div class="header-container">
+        <div class="wrapper">
+            <header>
+                <div class="body-img" id="body-img1">   
+                    <img class="logo-img" src="images/Logo.svg" alt="">
+                </div>
+
+                <div class="body-content">
+                    <h1>Support Local Restaurants</h1>
+                    <h1>By Finding Direct Discounts</h1>
+                </div>
+                <div class= "body-img" id="body-img2"> 
+                    <a class="body-img" href="deals.html">
+                    <img class="button-img" src="images/Deals Button.svg" alt="">
+                </a>
+            </div>
+            </header>
+        </div>
+    </div>
+
+    <div id="foodMap"></div>
          <script>
             if('geolocation' in navigator) {
                 console.log('geolocation is available');
@@ -53,5 +97,8 @@ https://leafletjs.com/examples/quick-start/
   
          </script>
 
-     </body>
+    <script src="index.js"></script>
+    <script src="main.js"> </script>
+
+</body>
 </html>
