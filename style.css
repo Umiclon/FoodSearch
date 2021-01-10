@@ -1,3 +1,6 @@
+/* HTML and CSS were partially based on https://www.youtube.com/watch?v=2r91B6ZwN_E&ab_channel=GTCoding */
+/* Video provided base knowledge on how to convert our design to an actual website */
+
 
 * {
     box-sizing: border-box;
@@ -9,7 +12,7 @@
 
   .nav-container {
     height: 98px;
-    background: #FFFDFD;
+    background: #131212;
   }
 
   .wrapper {
@@ -34,16 +37,16 @@
     font-style: normal;
     font-weight: normal;
     font-size: 50px;
-    color: black;
+    color: rgb(235, 229, 229);
   }
 
   .nav-items li {
       list-style: none;
       margin-right: 75px;
-      color: black;
+      color: rgb(240, 232, 232);
 
       font-family: "Roboto";
-      font-size: 20px;
+      font-size: 30px;
   }
 
   #last {
@@ -53,7 +56,10 @@
    /* Body */
 
   body {
-      background-color: black;
+      background-image: url("images/Map.svg");
+      /* Image credit: https://snazzymaps.com/style/11667/test */
+      background-position: right;
+      background-size: contain;
   }
 
   .header-container {
@@ -62,21 +68,22 @@
       align-items: center;
   }
 
-  .hero-img {
+  .body-img {
       text-align: center;
   }
 
-  #hero-img1 {
+  #body-img1 {
     padding-top: 175px;
   }
 
-  .hero-content {
+  .body-content {
       text-align: center;
-      color: white;
+      color: rgb(26, 25, 25);
       font-family: "Roboto", "sans-serif";
       padding-top: 61px;
+      background-repeat: no-repeat;
   }
 
-  #hero-img2 {
+  #body-img2 {
       padding-top: 61px;
   }
