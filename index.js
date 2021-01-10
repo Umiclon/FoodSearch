@@ -4,8 +4,10 @@ const app = express();
 app.listen(3000, () => console.log('3000 in use'));
 app.use(express.static('webpage'));
 
+require('dotenv').config();
+
 const axios = require("axios");
-let API_KEY = config.SECRET_API_KEY;
+let API_KEY = process.env.API_KEY;
 
 let yelpREST = axios.create({
     baseURL: "https://api.yelp.com/v3/",
@@ -18,14 +20,17 @@ let yelpREST = axios.create({
   yelpREST("/businesses/search", {
     params: {
       location: "vancouver",
-      term: "restaurant",
+      term: "discounts",
       limit: 10,
     },
   }).then(({ data }) => {
     let { businesses } = data
     businesses.forEach((b) => {
       console.log("Name: ", b.name)
+      console.log("Latitude: ", b.coordinates.latitude)
+      console.log("Longitude: ", b.coordinates.longitude)
     })
   })
+
 
   
