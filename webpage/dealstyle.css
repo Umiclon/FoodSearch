@@ -52,3 +52,10 @@
   #last {
       margin-right: 0;
   }
+
+  body {
+    background-image: url("images/deals.webp");
+    /* Image credit: https://cdn.wallpapersafari.com/86/61/N17jBV.jpg */
+    background-position: left;
+    background-size: contain;
+}
