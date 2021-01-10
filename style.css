@@ -1,0 +1,82 @@
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+
+  /* Navigation */
+
+  .nav-container {
+    height: 98px;
+    background: #FFFDFD;
+  }
+
+  .wrapper {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+
+  nav {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      height: 72px;
+  }
+
+  nav ul {
+      display: flex;
+
+  }
+
+  nav .logo {
+    font-family: "Righteous";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    color: black;
+  }
+
+  .nav-items li {
+      list-style: none;
+      margin-right: 75px;
+      color: black;
+
+      font-family: "Roboto";
+      font-size: 20px;
+  }
+
+  #last {
+      margin-right: 0;
+  }
+
+   /* Body */
+
+  body {
+      background-color: black;
+  }
+
+  .header-container {
+      background-size: contain;
+      height: calc(100vh - 72px);
+      align-items: center;
+  }
+
+  .hero-img {
+      text-align: center;
+  }
+
+  #hero-img1 {
+    padding-top: 175px;
+  }
+
+  .hero-content {
+      text-align: center;
+      color: white;
+      font-family: "Roboto", "sans-serif";
+      padding-top: 61px;
+  }
+
+  #hero-img2 {
+      padding-top: 61px;
+  }
