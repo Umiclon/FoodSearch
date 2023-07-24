@@ -1,4 +1,4 @@
-# Map UI
+# FoodSearch
 
 nwHacks 2021 Hackathon Project
  - Using Yelp Fusion API to find nearby restaurants and then displaying them with Geolocation API and leaflet maps.
